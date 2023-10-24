@@ -1,0 +1,119 @@
+[general]
+context=phones ; Default context for incoming calls. Defaults to 'default’
+port=5060
+bindport=5060
+bindaddr=0.0.0.0
+udpbindaddr=0.0.0.0 ; IP address to bind UDP listen socket to (0.0.0.0 binds to all)
+tcpenable=no ; Enable server for incoming TCP connections (default is no)
+tcpbindaddr=0.0.0.0 ; IP address for TCP server to bind to (0.0.0.0 binds to all interfaces)
+transport=udp,ws,wss ; Set the default transports. The order determines the primary default transport.
+realm=139.162.199.189
+srvlookup=yes ; Enable DNS SRV lookups on outbound calls
+maxexpirey=360 ; Maximum allowed time of incoming registrations (seconds)
+defaultexpirey=120 ; Default length of incoming/outgoing registration
+;disallow=all ; First disallow all codecs
+allow=alaw&ulaw ; Allow codecs in order of preference
+;allow=ilbc ; see https://wiki.asterisk.org/wiki/display/AST/RTP+Packetization
+;allow=all
+videosupport=yes ; Turn on support for SIP video. You need to turn this
+textsupport=yes ; Support for ITU-T T.140 realtime text.
+;canreinvite=yes
+externaddr=45.79.144.124
+realm=
+localnet=10.0.0.0/255.0.0.0
+localnet=192.168.0.0/255.255.0.0
+nat=force_rport,comedia
+;qualify=yes
+accept_outofcall_message=yes
+outofcall_message_context=message
+auth_message_requests=no
+
+[3012]
+type=friend
+secret=123
+host=dynamic
+context=phones
+nat=force_rport,comedia
+allow=alaw,ilbc,g729,gsm,g723,ulaw
+
+[3010]
+type=friend
+secret=123
+host=dynamic
+context=phones
+nat=force_rport,comedia
+allow=alaw,ilbc,g729,gsm,g723,ulaw
+
+[3009]
+type=friend
+secret=123
+host=dynamic
+context=phones
+nat=force_rport,comedia
+allow=alaw,ilbc,g729,gsm,g723,ulaw
+
+[3008]
+type=friend
+secret=123
+host=dynamic
+context=phones
+nat=force_rport,comedia
+allow=alaw,ilbc,g729,gsm,g723,ulaw
+
+[3007]
+type=friend
+secret=123
+host=dynamic
+context=phones
+nat=force_rport,comedia
+allow=alaw,ilbc,g729,gsm,g723,ulaw
+
+[3006]
+type=friend
+secret=123
+host=dynamic
+context=phones
+nat=force_rport,comedia
+allow=alaw,ilbc,g729,gsm,g723,ulaw
+
+[3005]
+type=friend
+secret=123
+host=dynamic
+context=phones
+nat=force_rport,comedia
+allow=alaw,ilbc,g729,gsm,g723,ulaw
+
+[3004]
+type=friend
+secret=123
+host=dynamic
+context=phones
+nat=force_rport,comedia
+allow=alaw,ilbc,g729,gsm,g723,ulaw
+
+[3003]
+type=friend
+secret=123
+host=dynamic
+context=phones
+nat=force_rport,comedia
+allow=alaw,ilbc,g729,gsm,g723,ulaw
+
+[3002]
+type=friend
+secret=123
+host=dynamic
+context=phones
+nat=force_rport,comedia
+allow=alaw,ilbc,g729,gsm,g723,ulaw
+
+[3001]
+type=friend
+secret=123
+host=dynamic
+context=phones
+nat=force_rport,comedia
+
+
+
